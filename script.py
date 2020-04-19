@@ -22,7 +22,7 @@ class Memory:
         # plot y v/s x
         self.ax.plot(np.array(self.xvalues), np.array(self.yvalues), color='orange', linestyle="--", linewidth=0.9)
         # add recent value as text in graph
-        self.ax.text(self.xvalues[-1], self.yvalues[-1] + 2, f"{self.yvalues[-1]}%")
+        self.ax.text(self.xvalues[-1], self.yvalues[-1] + 2, f"{self.yvalues[-1]}")
         # get new value
         usage = psutil.virtual_memory().percent
         # update x and y values
